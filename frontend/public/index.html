@@ -190,6 +190,77 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Photo Gallery</h2>
+                <p>Take a look at our rooms and facilities</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://images.unsplash.com/photo-1642541070065-3912f347e7c6?w=800&q=80" alt="Modern Bedroom 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Deluxe Room</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://images.unsplash.com/photo-1604580040660-f0a7f9abaea6?w=800&q=80" alt="Modern Bedroom 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Standard Room</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?w=800&q=80" alt="Bedroom Interior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Premium Room</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://images.pexels.com/photos/35189674/pexels-photo-35189674.jpeg?w=800&q=80" alt="Cozy Bedroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Cozy Bedroom</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?w=800&q=80" alt="Modern Kitchen" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Shared Kitchen</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=800&q=80" alt="Kitchen Area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Kitchen Facilities</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(6)">
+                    <img src="https://images.unsplash.com/photo-1638799869566-b17fa794c4de?w=800&q=80" alt="Modern Bathroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Private Bathroom</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(7)">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" alt="Bathroom Interior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Bathroom Facilities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <button class="lightbox-prev" onclick="event.stopPropagation(); changeImage(-1)">&#10094;</button>
+            <img id="lightbox-img" src="" alt="Gallery Image">
+            <button class="lightbox-next" onclick="event.stopPropagation(); changeImage(1)">&#10095;</button>
+        </div>
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
     <!-- Rooms Section -->
     <section id="rooms" class="section rooms">
         <div class="container">
